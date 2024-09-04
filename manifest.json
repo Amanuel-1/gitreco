@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Horizontal Scroller",
+  "version": "1.0",
+  "description": "Embeds a button that reveals a horizontal scrolling list of boxes on GitHub pages.",
+  "permissions": [
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["jquery.js", "content.js"]
+    }
+  ]
+}
